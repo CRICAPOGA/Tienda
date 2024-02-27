@@ -1,7 +1,6 @@
 package tienda.Controlador;
 
-// @author camil
-
+import javax.swing.JOptionPane;
 import tienda.Modelo.Producto;
 
 public class Valor {
@@ -20,7 +19,8 @@ public class Valor {
                 pr=new Producto(producto[i], 121, 1200);
                 break;
             default:
-                System.out.println("Perro eres TONTO o te pegan en CASA");
+                JOptionPane.showMessageDialog(null, "Perro eres TONTO o te pegan en CASA","ERROR",JOptionPane.WARNING_MESSAGE);
+                System.out.println();
         }
         return can*pr.getValor();
     }

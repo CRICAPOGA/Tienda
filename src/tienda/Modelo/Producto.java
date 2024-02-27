@@ -1,6 +1,5 @@
 package tienda.Modelo;
 
-// @author camil
 public class Producto {
     private String nombre;
     private int id;
